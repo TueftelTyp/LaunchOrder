@@ -1,0 +1,10 @@
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\bin\Release\LaunchOrder.exe.config
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\bin\Release\LaunchOrder.exe
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\bin\Release\LaunchOrder.pdb
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.csproj.AssemblyReference.cache
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.Form1.resources
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.Properties.Resources.resources
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.csproj.GenerateResource.cache
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.csproj.CoreCompileInputs.cache
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.exe
+C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.pdb
