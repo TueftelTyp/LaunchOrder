@@ -1,5 +1,6 @@
 # LaunchOrder
-You know the problem: when booting up, many programs start at the same time, which can slow down the system or lead to conflicts. With LaunchOrder, you now have a practical, small open source tool that allows you to easily define the order of the autostart yourself - including freely selectable delays between the programs.
+You know the problem: when booting up, many programs start at the same time, which can slow down the system or lead to conflicts. 
+With LaunchOrder, you now have a practical, small open source tool that allows you to easily define the order of the autostart yourself - including freely selectable delays between the programs.
 
 ### What LaunchOrder can do:
 - Defines an individual launch order for your autostart programs
@@ -12,6 +13,9 @@ The tool is ideal for anyone who wants to optimize their PC startup without havi
 
 
 [![overview](https://github.com/TueftelTyp/LaunchOrder/blob/main/Image/overview.png "overview")](https://github.com/TueftelTyp/LaunchOrder/blob/main/Image/overview.png "overview")
+<br>
+<br>
+<br>
 ---
 ## Important:
 this program does not change the autostarts set by Windows.
