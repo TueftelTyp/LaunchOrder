@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Reflection;
 
 namespace LaunchOrder
 {
@@ -340,6 +335,7 @@ namespace LaunchOrder
             Process.Start("wscript.exe", Path.Combine(Path.GetTempPath(), "launch.vbs")).WaitForExit();
             // Temporäre VBS-Datei löschen
             File.Delete(Path.Combine(Path.GetTempPath(), "launch.vbs"));
+            ShowNotify("Running!", " ", 3000, ToolTipIcon.Info);
         }
         private void RemoveFromAutostart()
         {
@@ -349,8 +345,20 @@ namespace LaunchOrder
 
             if (File.Exists(shortcutPath))
             {
-                File.Delete(shortcutPath);}
+                try
+                {
+                    File.Delete(shortcutPath);
+                    btnSetAutostart.Visible = false;
+                    btnDelAutostart.Visible = true;
+                    ShowNotify("Stopped!", " ", 3000, ToolTipIcon.Info);
+                }
+                catch (Exception ex)
+                {
+                    ShowNotify("Error", ex.Message, 3000, ToolTipIcon.Error);
+                }
+
             }
+        }
         private bool IsShortcutInAutostart()
         {
             string autostartPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
@@ -415,6 +423,14 @@ namespace LaunchOrder
         }
         private void btnInfo_Click(object sender, EventArgs e)
         {
+            openURL();
+        }
+        private void btnInfo2_Click(object sender, EventArgs e)
+        {
+            openURL();
+        }
+        private void openURL()
+        {
             string url = "https://github.com/TueftelTyp/LaunchOrder";
             Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
         }
@@ -446,5 +462,66 @@ namespace LaunchOrder
         {
             ImportAutostarts();
         }
+        private void btnDesroyYes_Click(object sender, EventArgs e)
+        {
+            RemoveFromAutostart();
+            string appDataPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"LaunchOrder");
+            if (Directory.Exists(appDataPath))
+            {
+                try
+                {
+                    Directory.Delete(appDataPath, true); // true = rekursiv
+                    ShowNotify("Cleared", "Program will now be closed.", 3000, ToolTipIcon.Info);
+                    var timer = new System.Windows.Forms.Timer();
+                    timer.Interval = 10000;
+                    timer.Tick += (s, args) =>
+                    {
+                        timer.Stop();
+                        timer.Dispose();
+                        Application.Exit();
+                    };
+                    timer.Start();
+                }
+                catch (Exception ex)
+                {
+                    ShowNotify("Error", " " + ex.Message, 5000, ToolTipIcon.Error);
+                }
+            }
+            else
+            {
+                return;
+            }
+
+
+
+        }
+        private void btnStartFolder_Click(object sender, EventArgs e)
+        {
+            string autostartPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup);
+            if (Directory.Exists(autostartPath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", autostartPath);
+            }
+            else
+            {
+                ShowNotify("Error", "Autostart-Folder not found!", 3000, ToolTipIcon.Error);
+            }
+        }
+        private void btnDataFolder_Click(object sender, EventArgs e)
+        {
+            string appDataPath = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "LaunchOrder");
+            if (Directory.Exists(appDataPath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", appDataPath);
+            }
+            else
+            {
+                ShowNotify("Error", "AppData-Folder not found!", 3000, ToolTipIcon.Error);
+            }
+        }
+
+        
     }
 }

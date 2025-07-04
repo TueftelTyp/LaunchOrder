@@ -98,6 +98,15 @@
   <ItemGroup>
     <None Include="IMAGES\trimmed\load.png" />
     <None Include="IMAGES\LO.ico" />
+    <None Include="IMAGES\trimmed\bomb.png" />
+    <None Include="IMAGES\trimmed\check.png" />
+    <None Include="IMAGES\trimmed\question.png" />
+    <None Include="IMAGES\trimmed\trash.png" />
+    <None Include="IMAGES\trimmed\exclamark.png" />
+    <None Include="IMAGES\trimmed\exmark.png" />
+    <None Include="IMAGES\trimmed\starr.png" />
+    <None Include="IMAGES\trimmed\folder.png" />
+    <None Include="IMAGES\trimmed\info.png" />
     <Content Include="LO.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
