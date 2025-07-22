@@ -8,3 +8,13 @@ C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Debug\LaunchOrder.csproj.CoreCo
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Debug\LaunchOrder.exe
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Debug\LaunchOrder.pdb
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Debug\LaunchOrder.Form1.resources
+G:\#####  DATA\Coding\LaunchOrder\bin\Debug\LaunchOrder.exe.config
+G:\#####  DATA\Coding\LaunchOrder\bin\Debug\LaunchOrder.exe
+G:\#####  DATA\Coding\LaunchOrder\bin\Debug\LaunchOrder.pdb
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.csproj.AssemblyReference.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.Form1.resources
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.Properties.Resources.resources
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.csproj.GenerateResource.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.csproj.CoreCompileInputs.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.exe
+G:\#####  DATA\Coding\LaunchOrder\obj\Debug\LaunchOrder.pdb

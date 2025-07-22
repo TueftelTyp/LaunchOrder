@@ -8,3 +8,13 @@ C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.csproj.Gene
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.csproj.CoreCompileInputs.cache
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.exe
 C:\Users\mb\Desktop\ \Coding\C#\LaunchOrder\obj\Release\LaunchOrder.pdb
+G:\#####  DATA\Coding\LaunchOrder\bin\Release\LaunchOrder.exe.config
+G:\#####  DATA\Coding\LaunchOrder\bin\Release\LaunchOrder.exe
+G:\#####  DATA\Coding\LaunchOrder\bin\Release\LaunchOrder.pdb
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.csproj.AssemblyReference.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.Form1.resources
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.Properties.Resources.resources
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.csproj.GenerateResource.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.csproj.CoreCompileInputs.cache
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.exe
+G:\#####  DATA\Coding\LaunchOrder\obj\Release\LaunchOrder.pdb
